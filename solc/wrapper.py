@@ -39,7 +39,6 @@ def solc_wrapper(solc_binary=None,
                  opcodes=None,
                  bin=None,
                  bin_runtime=None,
-                 clone_bin=None,
                  abi=None,
                  interface=None,
                  hashes=None,
@@ -123,9 +122,6 @@ def solc_wrapper(solc_binary=None,
 
     if bin_runtime:
         command.append('--bin-runtime')
-
-    if clone_bin:
-        command.append('--clone-bin')
 
     if abi:
         command.append('--abi')
